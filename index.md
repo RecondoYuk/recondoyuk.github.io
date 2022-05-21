@@ -7,6 +7,10 @@ But you can check out this [link](https://recondoyuk.github.io/HelloWorld/ "Hell
 
 ---
 ## Blog ##
-This is a random blog post that is supposed to be about my interactions with Github so far.  
-
-Well, so far it has been a challenge to say the least.  It's definitely a process to learn, but I *wish* I had learned it earlier.  It definitely would have helped me keep things organized better.
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
